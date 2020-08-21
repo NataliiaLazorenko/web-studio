@@ -1,0 +1,23 @@
+%input-and-comment {
+  display: block;
+  width: 100%;
+  padding-top: 12px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: $text-light-theme-color;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: inherit;
+
+  transition: border-color $transition-duration $timing-function,
+    fill $transition-duration $timing-function;
+}
+
+%label-field-in-focus {
+  font-size: 12px;
+  line-height: 1.17;
+  color: $accent-color;
+}

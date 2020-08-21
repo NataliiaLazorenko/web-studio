@@ -1,0 +1,1212 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type='checkbox'],
+[type='radio'] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/* raleway-700 - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Raleway Bold"), local("Raleway-Bold"), url("../fonts/raleway-v16-latin-700.woff2") format("woff2"), url("../fonts/raleway-v16-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* задаємо sass-змінні */
+.modal-form-input, .modal-form-comment {
+  display: block;
+  width: 100%;
+  padding-top: 12px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: #757575;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: inherit;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-input:focus + .modal-form-label,
+.modal-form-input:not(:placeholder-shown) + .modal-form-label, .modal-form-comment:focus + .modal-form-label,
+.modal-form-comment:not(:placeholder-shown) + .modal-form-label {
+  font-size: 12px;
+  line-height: 1.17;
+  color: #2196f3;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* для body можна не задавати клас, а звернутися по імені тега */
+.page {
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Утиліти */
+/* в html додаємо link до посилань, де потрібно забрати підкреслення */
+.link {
+  display: block;
+  text-decoration: none;
+}
+
+/* в html додаємо утиліту list до списків, де потрібно забрати маркер */
+.list {
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Sections */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: #212121;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.text {
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+.list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Logo */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #000000;
+}
+
+.logo .accent {
+  color: #2196f3;
+}
+
+/* MODAL WINDOW */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden .modal-form {
+  transform: translate(-50%, -50%) scale(0.7);
+}
+
+.modal-form .link-contract {
+  color: #2196f3;
+}
+
+.modal-form .button {
+  margin: 0 auto;
+  padding: 10px 55px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form .button:hover, .modal-form .button:focus {
+  background-color: #188ce8;
+}
+
+.modal-invite {
+  display: block;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 20px;
+  color: #212121;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-button:focus, .modal-close-button:hover {
+  fill: #2196f3;
+}
+
+.icon-modal-close-button {
+  display: block;
+  margin: 0 auto;
+  width: 18px;
+  height: 18px;
+}
+
+.modal-form-input-field,
+.modal-form-comment-field {
+  position: relative;
+  cursor: pointer;
+}
+
+.modal-form-input-field {
+  margin-bottom: 28px;
+}
+
+.modal-form-comment-field {
+  margin-bottom: 20px;
+}
+
+.modal-form-input {
+  padding-left: 42px;
+}
+
+.modal-form-input:focus, .modal-form-input:not(:placeholder-shown) {
+  outline: none;
+  border-color: #2196f3;
+}
+
+.modal-form-comment {
+  height: 120px;
+  padding-left: 16px;
+  resize: none;
+}
+
+.modal-form-comment:focus, .modal-form-comment:not(:placeholder-shown) {
+  outline: none;
+  border-color: #2196f3;
+}
+
+.icon-modal-form-input {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+}
+
+.modal-form-input:focus ~ .icon-modal-form-input,
+.modal-form-input:not(:placeholder-shown) ~ .icon-modal-form-input {
+  fill: #2196f3;
+}
+
+.modal-form-label {
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  cursor: inherit;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-input + .modal-form-label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+}
+
+.modal-form-comment + .modal-form-label {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+}
+
+.modal-form-input:focus + .modal-form-label,
+.modal-form-input:not(:placeholder-shown) + .modal-form-label {
+  transform: translate(-25px, -37px);
+}
+
+.modal-form-comment:focus + .modal-form-label,
+.modal-form-comment:not(:placeholder-shown) + .modal-form-label {
+  transform: translateY(-29px);
+}
+
+.modal-form-option-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  line-height: 1.71;
+}
+
+.modal-form-custom-checkbox {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+}
+
+.modal-form-checkbox:checked + .modal-form-custom-checkbox {
+  background-image: url(../images/icon-checked.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: transparent;
+  background-color: #2196f3;
+}
+
+.button {
+  display: block;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+.social-network {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+}
+
+/* Header */
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* замість justify-content можна задати margin-left: auto для списку з e-mail та телефоном */
+}
+
+.header .logo {
+  margin-right: 85px;
+  animation-duration: 3000ms;
+}
+
+.header.studio {
+  border-bottom: transparent;
+}
+
+/* Navigation */
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav .link:hover, .site-nav .link:focus {
+  color: #2196f3;
+}
+
+/* в html додаємо додатковий клас current для активної сторінки */
+.site-nav .link.current {
+  padding-bottom: 0;
+  color: #2196f3;
+}
+
+.site-nav .link.current::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  margin-top: 28px;
+  background-color: #2196f3;
+}
+
+.header-connect {
+  display: flex;
+}
+
+.header-connect .link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-connect .link:hover, .header-connect .link:focus {
+  color: #2196f3;
+}
+
+.icon-header-connect {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.header-connect-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.header-connect-item > .link {
+  display: flex;
+  align-items: center;
+}
+
+.header-connect-item > .link:hover, .header-connect-item > .link:focus {
+  color: #2196f3;
+}
+
+/* Hero */
+.hero {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/header.jpg");
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.hero .hero-title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero > .button {
+  margin: 0 auto;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero > .button:hover, .hero > .button:focus {
+  background-color: #188ce8;
+}
+
+/* Benefits */
+.benefits {
+  padding-bottom: 0;
+}
+
+.benefits .title {
+  margin-bottom: 10px;
+}
+
+.benefits .list {
+  display: flex;
+}
+
+.benefits .list-item {
+  width: calc((100% - 90px) / 4);
+  /* width: 270px; */
+}
+
+.benefits-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+}
+
+.icon-benefits-list {
+  width: 70px;
+  height: 70px;
+}
+
+/* Альтернативний варіант додавання іконок через background-image */
+/* .benefits .list-item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+} */
+/* Створити додаткові класи для елементів списку */
+/* .list-item.icon-antenna::before {
+  background-image: url('../images/benefits/image1-antenna.svg');
+}
+
+.list-item.icon-clock::before {
+  background-image: url('../images/benefits/image2-clock.svg');
+}
+
+.list-item.icon-diagram::before {
+  background-image: url('../images/benefits/image3-diagram.svg');
+}
+
+.list-item.icon-astonaut::before {
+  background-image: url('../images/benefits/image4-astronaut.svg');
+} */
+/* What we do */
+.what-we-do .list {
+  display: flex;
+}
+
+.what-we-do .list-item {
+  position: relative;
+  width: calc((100% - 60px) / 3);
+}
+
+.what-we-do .title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 27px 15px;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+/* Our team */
+.team {
+  background-color: #f5f4fa;
+}
+
+.team .list {
+  display: flex;
+}
+
+.team .list-item {
+  width: calc((100% - 90px) / 4);
+  padding-bottom: 24px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.team .team-image {
+  margin-bottom: 30px;
+}
+
+.team .team-member {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: #212121;
+}
+
+.team .position {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team .social-links {
+  justify-content: center;
+}
+
+.team .social-network {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team .social-network:hover, .team .social-network:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+.social-links-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icon-social-link {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Clients */
+.clients .list {
+  display: flex;
+}
+
+.clients .clients-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients .clients-list-link:hover, .clients .clients-list-link:active, .clients .clients-list-link:focus {
+  color: #2196f3;
+  border-color: #2196f3;
+  outline: none;
+}
+
+.clients .clients-logo {
+  fill: currentColor;
+}
+
+/* Footer */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #ffffff;
+  background-color: #2f303a;
+}
+
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer .contacts {
+  margin-right: 83px;
+}
+
+.footer .logo {
+  margin-bottom: 20px;
+  color: inherit;
+}
+
+.footer .footer-map {
+  color: inherit;
+}
+
+.footer .title {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: inherit;
+}
+
+.footer .button {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 28px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.footer .icon-sign {
+  margin-left: 10px;
+  fill: #ffffff;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+}
+
+.footer-join-us {
+  margin-right: 94px;
+}
+
+.footer-join-us > .list {
+  display: flex;
+}
+
+.footer-join-us .social-network {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-join-us .social-network:hover, .footer-join-us .social-network:focus {
+  background-color: #2196f3;
+}
+
+.footer-join-us .icon-social-link {
+  fill: #ffffff;
+}
+
+.footer-address .link {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+.footer-address .link:not(:first-child) {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-address .link:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+/* Альтернативний варіант додавання іконки через псевдоелемент та background-image */
+/* .footer .button::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+
+  background-image: url('../images/footer/icon-sign.svg');
+} */
+/* Footer form */
+.footer-form {
+  width: 570px;
+}
+
+.footer-form input {
+  display: block;
+  width: 358px;
+  padding: 15px 16px;
+  margin-right: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.footer-form-field {
+  display: flex;
+}
+
+.form-mail::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Page Portfolio */
+.portfolio .filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio .filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio .card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio .card-item {
+  width: calc((100% - 60px) / 3);
+  /* width: 370px; */
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio .card-item:hover, .portfolio .card-item:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio .card-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.portfolio .card-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.portfolio .card-content {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 24px;
+}
+
+.portfolio .title {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-transform: none;
+}
+
+.portfolio .text {
+  font-size: 16px;
+  line-height: 1.88;
+  color: #757575;
+}
+
+.portfolio .button {
+  padding: 6px 22px;
+  font-weight: 500;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  color: #212121;
+  background-color: #f5f4fa;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio .button:focus, .portfolio .button:hover, .portfolio .button:active {
+  color: #ffffff;
+  background-color: #2196f3;
+  outline: transparent;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio .card-item-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 63px 24px;
+  width: 100%;
+  height: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-item:hover .overlay-text,
+.card-item:focus .overlay-text {
+  transform: translateY(0);
+  opacity: 1;
+}
+/*# sourceMappingURL=main.css.map */

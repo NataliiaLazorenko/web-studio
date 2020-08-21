@@ -1,0 +1,12 @@
+/* Logo */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #000000;
+
+  .accent {
+    color: $accent-color;
+  }
+}

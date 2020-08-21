@@ -1,0 +1,110 @@
+/* Page Portfolio */
+.portfolio .filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio .filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio .card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio .card-item {
+  width: calc((100% - 60px) / 3);
+  /* width: 370px; */
+  transition: box-shadow $transition-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
+
+  &:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+
+  &:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+  }
+}
+
+.portfolio .card-content {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 24px;
+}
+
+.portfolio .title {
+  margin-bottom: 4px;
+
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-transform: none;
+}
+
+.portfolio .text {
+  font-size: 16px;
+  line-height: 1.88;
+  color: $text-light-theme-color;
+}
+
+.portfolio .button {
+  padding: 6px 22px;
+
+  font-weight: 500;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  color: $title-light-theme-color;
+  background-color: #f5f4fa;
+
+  transition: color $transition-duration $timing-function,
+    background-color $transition-duration $timing-function,
+    box-shadow $transition-duration $timing-function;
+
+  &:focus,
+  &:hover,
+  &:active {
+    color: $title-dark-theme-color;
+    background-color: $accent-color;
+    outline: transparent;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 3px 1px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.portfolio .card-item-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-text {
+  @include position-absolute();
+
+  padding: 63px 24px;
+  width: 100%;
+  height: 100%;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  color: $title-dark-theme-color;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform $transition-duration $timing-function,
+    opacity $transition-duration $timing-function;
+
+  .card-item:hover &,
+  .card-item:focus & {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

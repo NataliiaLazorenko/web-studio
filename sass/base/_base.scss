@@ -1,0 +1,42 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* для body можна не задавати клас, а звернутися по імені тега */
+.page {
+  background-color: #ffffff;
+  font-family: $main-font;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: $text-light-theme-color;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Утиліти */
+/* в html додаємо link до посилань, де потрібно забрати підкреслення */
+.link {
+  display: block;
+  text-decoration: none;
+}
+
+/* в html додаємо утиліту list до списків, де потрібно забрати маркер */
+.list {
+  list-style: none;
+}

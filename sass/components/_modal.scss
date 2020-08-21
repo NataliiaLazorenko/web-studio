@@ -1,0 +1,201 @@
+/* MODAL WINDOW */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+
+  transition: opacity $transition-duration $timing-function;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-form {
+  @include position-absolute(50%, 50%);
+
+  width: 528px;
+  padding: 40px;
+
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform $transition-duration $timing-function;
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+
+  .link-contract {
+    color: $accent-color;
+  }
+
+  .button {
+    margin: 0 auto;
+    padding: 10px 55px;
+    box-shadow: $box-shadow;
+    cursor: pointer;
+
+    transition: background-color $transition-duration $timing-function;
+
+    &:hover,
+    &:focus {
+      background-color: #188ce8;
+    }
+  }
+}
+
+.modal-invite {
+  display: block;
+  margin-bottom: 30px;
+  text-align: center;
+
+  font-size: 20px;
+  color: $title-light-theme-color;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition: fill $transition-duration $timing-function;
+
+  &:focus,
+  &:hover {
+    fill: $accent-color;
+  }
+}
+
+.icon-modal-close-button {
+  display: block;
+  margin: 0 auto;
+
+  width: 18px;
+  height: 18px;
+}
+
+.modal-form-input-field,
+.modal-form-comment-field {
+  position: relative;
+  cursor: pointer;
+}
+
+.modal-form-input-field {
+  margin-bottom: 28px;
+}
+
+.modal-form-comment-field {
+  margin-bottom: 20px;
+}
+
+.modal-form-input {
+  @extend %input-and-comment;
+  padding-left: 42px;
+
+  &:focus,
+  &:not(:placeholder-shown) {
+    outline: none;
+    border-color: $accent-color;
+  }
+}
+
+.modal-form-comment {
+  @extend %input-and-comment;
+  height: 120px;
+  padding-left: 16px;
+  resize: none;
+
+  &:focus,
+  &:not(:placeholder-shown) {
+    outline: none;
+    border-color: $accent-color;
+  }
+}
+
+.icon-modal-form-input {
+  @include position-absolute(50%, 16px);
+  transform: translateY(-50%);
+
+  width: 18px;
+  height: 18px;
+
+  .modal-form-input:focus ~ &,
+  .modal-form-input:not(:placeholder-shown) ~ & {
+    fill: $accent-color;
+  }
+}
+
+.modal-form-label {
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  cursor: inherit;
+
+  transition: transform $transition-duration $timing-function,
+    color $transition-duration $timing-function;
+
+  .modal-form-input + & {
+    @include position-absolute(50%, 42px);
+
+    transform: translateY(-50%);
+  }
+
+  .modal-form-comment + & {
+    @include position-absolute(12px, 16px);
+  }
+
+  .modal-form-input:focus + &,
+  .modal-form-input:not(:placeholder-shown) + & {
+    @extend %label-field-in-focus;
+    transform: translate(-25px, -37px);
+  }
+
+  .modal-form-comment:focus + &,
+  .modal-form-comment:not(:placeholder-shown) + & {
+    @extend %label-field-in-focus;
+    transform: translateY(-29px);
+  }
+}
+
+.modal-form-option-label {
+  @include align-center();
+  margin-bottom: 30px;
+
+  line-height: 1.71;
+}
+
+.modal-form-custom-checkbox {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+
+  border: 2px solid #212121;
+  border-radius: 2px;
+
+  .modal-form-checkbox:checked + & {
+    background-image: url(../images/icon-checked.svg);
+    background-size: contain;
+    background-origin: border-box;
+
+    border-color: transparent;
+    background-color: $accent-color;
+  }
+}

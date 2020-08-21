@@ -1,0 +1,14 @@
+/* задаємо sass-змінні */
+$main-font: 'Roboto', sans-serif;
+
+$title-dark-theme-color: #ffffff;
+$title-light-theme-color: #212121;
+$text-dark-theme-color: rgba(255, 255, 255, 0.6);
+$text-light-theme-color: #757575;
+$accent-color: #2196f3;
+
+$main-icon-color: #afb1b8;
+$box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+$transition-duration: 250ms;
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);

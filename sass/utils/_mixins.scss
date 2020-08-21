@@ -1,0 +1,11 @@
+@mixin align-center($ai: center, $jc: center) {
+  display: flex;
+  align-items: $ai;
+  justify-content: $jc;
+}
+
+@mixin position-absolute($top: 0, $left: 0) {
+  position: absolute;
+  top: $top;
+  left: $left;
+}

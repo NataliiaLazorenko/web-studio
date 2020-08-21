@@ -1,0 +1,104 @@
+/* Header */
+.header {
+  border-bottom: 1px solid #ececec;
+
+  .container {
+    @include align-center($jc: space-between);
+    /* замість justify-content можна задати margin-left: auto для списку з e-mail та телефоном */
+  }
+
+  .logo {
+    margin-right: 85px;
+    animation-duration: 3000ms;
+  }
+
+  &.studio {
+    border-bottom: transparent;
+  }
+}
+
+/* Navigation */
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: $title-light-theme-color;
+  transition: color $transition-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+/* в html додаємо додатковий клас current для активної сторінки */
+.site-nav .link.current {
+  padding-bottom: 0;
+  color: $accent-color;
+
+  &::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    margin-top: 28px;
+
+    background-color: $accent-color;
+  }
+}
+
+.header-connect {
+  display: flex;
+}
+
+.header-connect .link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: $text-light-theme-color;
+  transition: color $transition-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.icon-header-connect {
+  margin-right: 10px;
+
+  fill: currentColor;
+}
+
+.header-connect-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.header-connect-item > .link {
+  display: flex;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

@@ -1,0 +1,32 @@
+/* Sections */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: $title-light-theme-color;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $title-light-theme-color;
+}
+
+.text {
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+.list-item:not(:last-child) {
+  margin-right: 30px;
+}
