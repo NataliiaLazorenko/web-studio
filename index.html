@@ -22,41 +22,67 @@
     <!-- Шапка -->
     <header class="header studio">
       <div class="container">
-        <nav class="navigation">
-          <a class="logo link animate__heartBeat" href="./index.html" lang="en"
-            ><span class="accent">Web</span> Studio</a
+        <a class="logo animate__heartBeat" href="./index.html" lang="en"
+          ><span class="accent">Web</span> Studio</a
+        >
+        <button
+          class="menu-button"
+          type="button"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg
+            class="icon-menu-button"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
           >
-          <ul class="site-nav list">
-            <li class="site-nav-item">
-              <a class="link current" href="">Студия</a>
+            <use
+              class="icon-menu-open"
+              href="./images/sprite.svg#icon-menu-open"
+            ></use>
+            <use
+              class="icon-menu-close"
+              href="./images/sprite.svg#icon-menu-close"
+            ></use>
+          </svg>
+        </button>
+
+        <div class="menu-container" data-menu>
+          <nav class="navigation">
+            <ul class="site-nav-list">
+              <li class="site-nav-item">
+                <a class="site-nav-link current" href="">Студия</a>
+              </li>
+              <li class="site-nav-item">
+                <a class="site-nav-link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="site-nav-item">
+                <a class="site-nav-link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- МОЖНА ОБЕРНУТИ У address -->
+          <ul class="header-connect-list">
+            <li class="header-connect-item">
+              <a class="header-connect-link" href="mailto:info@devstudio.com">
+                <svg class="icon-header-connect" width="16px" height="11px">
+                  <use href="./images/sprite.svg#envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="site-nav-item">
-              <a class="link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="site-nav-item">
-              <a class="link" href="">Контакты</a>
+            <li class="header-connect-item">
+              <a class="header-connect-link" href="tel:+380961111111">
+                <svg class="icon-header-connect" width="10px" height="15px">
+                  <use href="./images/sprite.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <!-- МОЖНА ОБЕРНУТИ У address -->
-        <ul class="header-connect list">
-          <li class="header-connect-item">
-            <a class="header-mail link" href="mailto:info@devstudio.com">
-              <svg class="icon-header-connect" width="16px" height="11px">
-                <use href="./images/sprite.svg#envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="header-connect-item">
-            <a class="header-tel link" href="tel:+380961111111">
-              <svg class="icon-header-connect" width="10px" height="15px">
-                <use href="./images/sprite.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
 
@@ -655,6 +681,8 @@
         <button class="button" type="submit">Отправить</button>
       </form>
     </div>
+
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

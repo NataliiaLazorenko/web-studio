@@ -1,10 +1,18 @@
 /* Logo */
 .logo {
+  @extend %link;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: #000000;
+  font-size: 24px;
+  line-height: 1.17;
+  color: $title-light-theme-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+
+    color: #000000;
+  }
 
   .accent {
     color: $accent-color;

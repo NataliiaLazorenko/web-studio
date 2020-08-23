@@ -1,0 +1,61 @@
+/* Benefits */
+.benefits {
+  padding-bottom: 0;
+
+  .title {
+    margin-bottom: 10px;
+  }
+
+  .list {
+    display: flex;
+  }
+}
+
+.benefits .list-item {
+  width: calc((100% - 90px) / 4);
+  /* width: 270px; */
+}
+
+.benefits-icon {
+  @include align-center();
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+
+  background-color: #f5f4fa;
+}
+
+.icon-benefits-list {
+  width: 70px;
+  height: 70px;
+}
+
+/* Альтернативний варіант додавання іконок через background-image */
+/* .benefits .list-item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+} */
+
+/* Створити додаткові класи для елементів списку */
+/* .list-item.icon-antenna::before {
+  background-image: url('../images/benefits/image1-antenna.svg');
+}
+
+.list-item.icon-clock::before {
+  background-image: url('../images/benefits/image2-clock.svg');
+}
+
+.list-item.icon-diagram::before {
+  background-image: url('../images/benefits/image3-diagram.svg');
+}
+
+.list-item.icon-astonaut::before {
+  background-image: url('../images/benefits/image4-astronaut.svg');
+} */

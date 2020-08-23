@@ -1,0 +1,29 @@
+/* Clients */
+.clients .list {
+  display: flex;
+}
+
+.clients .clients-list-link {
+  @include align-center();
+
+  color: $main-icon-color;
+  border: 1px solid $main-icon-color;
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
+
+  transition: color $transition-duration $timing-function,
+    border-color $transition-duration $timing-function;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #2196f3;
+    border-color: $accent-color;
+    outline: none;
+  }
+}
+
+.clients .clients-logo {
+  fill: currentColor;
+}

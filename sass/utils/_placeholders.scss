@@ -21,3 +21,15 @@
   line-height: 1.17;
   color: $accent-color;
 }
+
+%link {
+  // display: block;
+  text-decoration: none;
+  color: currentColor;
+}
+
+%list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
