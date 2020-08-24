@@ -15,7 +15,7 @@
 
     background-color: transparent;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       display: none;
     }
   }
@@ -28,11 +28,11 @@
   .logo {
     animation-duration: 3000ms;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       margin-right: 81px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       margin-right: 85px;
     }
   }
@@ -46,11 +46,7 @@
   letter-spacing: 0.02em;
   z-index: 100;
 
-  &.is-open {
-    display: block;
-  }
-
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet - 1px) {
     display: none;
     @include position-absolute($top: 100%);
     width: 100%;
@@ -66,9 +62,13 @@
     border-top: 1px solid #ececec;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
       0px 1px 3px rgba(0, 0, 0, 0.16);
+
+    &.is-open {
+      display: block;
+    }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
   }
@@ -100,27 +100,27 @@
 .site-nav-list {
   @extend %list;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet - 1px) {
     margin-bottom: 60px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
 
     margin-right: 84px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-right: 305px;
   }
 }
 
 .site-nav-item:not(:last-child) {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet - 1px) {
     margin-bottom: 40px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-right: 50px;
   }
 }
@@ -128,25 +128,25 @@
 .header-connect-list {
   @extend %list;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
     text-align: left;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
   }
 }
 
 .header-connect-item:not(:last-child) {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet - 1px) {
     margin-bottom: 16px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
     margin-bottom: 10px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-right: 30px;
   }
 }
@@ -168,7 +168,7 @@
 
   color: $title-light-theme-color;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -179,7 +179,7 @@
 .site-nav-link.current {
   color: $accent-color;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding-bottom: 0;
   }
 
@@ -191,11 +191,11 @@
 
     background-color: $accent-color;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $tablet - 1px) {
       margin-top: 8px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       margin-top: 28px;
     }
   }
@@ -204,7 +204,7 @@
 .header-connect-link {
   color: $text-light-theme-color;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
 
@@ -212,7 +212,7 @@
     line-height: 1.17;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: 1.14;
   }

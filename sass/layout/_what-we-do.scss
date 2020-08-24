@@ -1,22 +1,31 @@
 /* What we do */
-.what-we-do .list {
-  display: flex;
-}
+.what-we-do {
+  padding-top: 0;
 
-.what-we-do .list-item {
-  position: relative;
-  width: calc((100% - 60px) / 3);
-}
+  @media screen and (max-width: $desktop - 1px) {
+    display: none;
+  }
 
-.what-we-do .title {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  .list {
+    @extend %list;
+    display: flex;
+  }
 
-  width: 100%;
-  padding: 27px 15px;
-  text-align: center;
+  .list-item {
+    position: relative;
+    width: calc((100% - 60px) / 3);
+  }
 
-  color: $title-dark-theme-color;
-  background-color: rgba(47, 48, 58, 0.8);
+  .title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 27px 15px;
+    text-align: center;
+
+    color: $title-dark-theme-color;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
 }

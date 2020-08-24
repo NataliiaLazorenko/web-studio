@@ -1,19 +1,51 @@
 /* Benefits */
-.benefits {
-  padding-bottom: 0;
+.benefits .title {
+  margin-bottom: 10px;
 
-  .title {
-    margin-bottom: 10px;
-  }
-
-  .list {
-    display: flex;
+  @media screen and (max-width: $tablet - 1px) {
+    text-align: center;
   }
 }
 
-.benefits .list-item {
-  width: calc((100% - 90px) / 4);
-  /* width: 270px; */
+.benefits-list {
+  @extend %list;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.benefits-list-item {
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 90px) / 4);
+  }
+
+  &:nth-child(odd) {
+    @media screen and (min-width: $tablet) {
+      margin-right: 30px;
+    }
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: $tablet - 1px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-right: 30px;
+    }
+  }
+
+  &:not(:nth-last-child(-n + 2)) {
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .benefits-icon {
@@ -29,6 +61,10 @@
   width: 70px;
   height: 70px;
 }
+
+// .benefits .text:not(:last-child) {
+//   margin-bottom: 30px;
+// }
 
 /* Альтернативний варіант додавання іконок через background-image */
 /* .benefits .list-item::before {

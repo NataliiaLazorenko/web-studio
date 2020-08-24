@@ -6,17 +6,17 @@
 @import './utils/mixins';
 @import './base/common';
 @import './components/container';
-// @import './components/section';
+@import './components/section';
 @import './components/logo';
 @import './components/modal';
 @import './components/button';
 // @import './components/social-network';
 
 @import './layout/header';
-// @import './layout/hero';
-// @import './layout/benefits';
-// @import './layout/what-we-do';
-// @import './layout/team';
+@import './layout/hero';
+@import './layout/benefits';
+@import './layout/what-we-do';
+@import './layout/team';
 // @import './layout/clients';
 // @import './layout/footer';
 // @import './pages/portfolio';

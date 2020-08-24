@@ -1,9 +1,15 @@
 /* Sections */
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
+// ПЕРЕВІРИТИ!!!!!!!!
 .section-title {
   margin-bottom: 50px;
 
@@ -15,6 +21,7 @@
 }
 
 .title {
+  // OK
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -23,6 +30,7 @@
 }
 
 .text {
+  // OK
   font-weight: 400;
   line-height: 1.71;
 }
