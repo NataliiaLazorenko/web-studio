@@ -7,31 +7,28 @@
 
     @media screen and (min-width: $tablet) {
       display: flex;
+      justify-content: space-between;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
       flex-wrap: wrap;
     }
   }
 
   .list-item {
-    // OK
     text-align: center;
     padding-bottom: 24px;
     background-color: $title-dark-theme-color;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
-
-    @media screen and (min-width: $desktop) {
-      width: calc((100% - 90px) / 4);
-    }
   }
 
   .team-image {
-    // OK
     margin-bottom: 30px;
   }
 
   .team-member {
-    // OK
     margin-bottom: 10px;
 
     font-weight: 500;
@@ -42,7 +39,6 @@
   }
 
   .position {
-    // OK
     margin-bottom: 16px;
 
     font-weight: 400;

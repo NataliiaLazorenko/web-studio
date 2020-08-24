@@ -10,7 +10,6 @@
 }
 
 .section-title {
-  // OK
   margin-bottom: 30px;
 
   font-weight: 700;
@@ -29,7 +28,6 @@
 }
 
 .title {
-  // OK
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -38,7 +36,6 @@
 }
 
 .text {
-  // OK
   font-weight: 400;
   line-height: 1.71;
 }
@@ -52,19 +49,9 @@
     width: calc((100% - 90px) / 4);
   }
 
-  &:nth-child(odd) {
-    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
-      margin-right: 30px;
-    }
-  }
-
   &:not(:last-child) {
     @media screen and (max-width: $tablet - 1px) {
       margin-bottom: 30px;
-    }
-
-    @media screen and (min-width: $desktop) {
-      margin-right: 30px;
     }
   }
 

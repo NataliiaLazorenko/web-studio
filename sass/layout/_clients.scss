@@ -1,6 +1,38 @@
 /* Clients */
-.clients .list {
+.clients-list {
+  @extend %list;
   display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: $desktop - 1px) {
+    flex-wrap: wrap;
+  }
+}
+
+.clients-list-item {
+  @media screen and (max-width: $tablet - 1px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 150px) / 6);
+  }
+
+  &:not(:nth-last-child(-n + 2)) {
+    @media screen and (max-width: $tablet - 1px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &:not(:nth-last-child(-n + 3)) {
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .clients .clients-list-link {
@@ -9,7 +41,6 @@
   color: $main-icon-color;
   border: 1px solid $main-icon-color;
   border-radius: 4px;
-  width: 170px;
   height: 90px;
 
   transition: color $transition-duration $timing-function,

@@ -9,15 +9,12 @@
   .list {
     @extend %list;
     display: flex;
+    justify-content: space-between;
   }
 
   .list-item {
     position: relative;
     width: calc((100% - 60px) / 3);
-
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
   }
 
   .title {

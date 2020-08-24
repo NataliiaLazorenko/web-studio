@@ -12,6 +12,10 @@
 
   @media screen and (min-width: $tablet) {
     display: flex;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
     flex-wrap: wrap;
   }
 }
