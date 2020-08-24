@@ -9,15 +9,23 @@
   }
 }
 
-// ПЕРЕВІРИТИ!!!!!!!!
 .section-title {
-  margin-bottom: 50px;
+  // OK
+  margin-bottom: 30px;
 
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
+
   color: $title-light-theme-color;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .title {
@@ -35,6 +43,34 @@
   line-height: 1.71;
 }
 
-.list-item:not(:last-child) {
-  margin-right: 30px;
+.list-item {
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 90px) / 4);
+  }
+
+  &:nth-child(odd) {
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+      margin-right: 30px;
+    }
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: $tablet - 1px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-right: 30px;
+    }
+  }
+
+  &:not(:nth-last-child(-n + 2)) {
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+      margin-bottom: 30px;
+    }
+  }
 }

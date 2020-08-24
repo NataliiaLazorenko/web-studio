@@ -55,11 +55,7 @@
 .footer-join-us {
   margin-right: 94px;
 
-  > .list {
-    display: flex;
-  }
-
-  .social-network {
+  .social-network-link {
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color $transition-duration $timing-function;
 
