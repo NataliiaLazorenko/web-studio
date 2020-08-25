@@ -17,6 +17,10 @@
   pointer-events: none;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .modal-form {
   @include position-absolute(50%, 50%);
 
