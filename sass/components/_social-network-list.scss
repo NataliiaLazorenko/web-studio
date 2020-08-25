@@ -1,6 +1,6 @@
 .social-links-list {
   @extend %list;
-  display: flex;
+  @include align-center();
 }
 
 .social-network-link {
@@ -10,4 +10,11 @@
   border-radius: 50%;
 
   color: $main-icon-color;
+
+  transition: background-color $transition-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }

@@ -386,7 +386,7 @@ template {
 }
 
 .logo, .site-nav-link,
-.header-connect-link {
+.header-connect-link, .footer-address .link {
   display: block;
   text-decoration: none;
   color: currentColor;
@@ -745,6 +745,8 @@ img {
 
 .social-links-list {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-network-link {
@@ -755,6 +757,11 @@ img {
   height: 44px;
   border-radius: 50%;
   color: #afb1b8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-network-link:hover, .social-network-link:focus {
+  background-color: #2196f3;
 }
 
 /* Header */
@@ -1198,11 +1205,10 @@ img {
 }
 
 .team .social-network-link {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team .social-network-link:hover, .team .social-network-link:focus {
-  background-color: #2196f3;
   color: #ffffff;
 }
 
@@ -1277,5 +1283,178 @@ img {
 
 .clients .clients-logo {
   fill: currentColor;
+}
+
+/* Footer */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #ffffff;
+  background-color: #2f303a;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer .container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer .container {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .contacts {
+    margin-right: 83px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .join-us {
+    margin-right: 94px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer .wrapper:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
+
+.footer .logo {
+  margin-bottom: 20px;
+  color: inherit;
+}
+
+.footer .footer-map {
+  color: inherit;
+}
+
+.footer .title {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: inherit;
+}
+
+.footer .button {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 28px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 1199px) {
+  .footer .button {
+    margin: 0 auto;
+  }
+}
+
+.footer .icon-sign {
+  margin-left: 10px;
+  fill: #ffffff;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+}
+
+.social-network-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer .icon-social-link {
+  fill: #ffffff;
+}
+
+.footer-address .link {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+.footer-address .link:not(:first-child) {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-address .link:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-address .link:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+/* Альтернативний варіант додавання іконки через псевдоелемент та background-image */
+/* .footer .button::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+
+  background-image: url('../images/footer/icon-sign.svg');
+} */
+/* Footer form */
+.footer-form input {
+  display: block;
+  padding: 15px 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 767px) {
+  .footer-form input {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-form input {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-form input {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form input {
+    width: 358px;
+    margin-right: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form-field {
+    display: flex;
+  }
+}
+
+.form-mail::placeholder {
+  color: rgba(255, 255, 255, 0.6);
 }
 /*# sourceMappingURL=main.css.map */

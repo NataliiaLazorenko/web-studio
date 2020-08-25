@@ -6,13 +6,36 @@
   color: $title-dark-theme-color;
   background-color: #2f303a;
 
+  @media screen and (max-width: $desktop - 1px) {
+    text-align: center;
+  }
+
   .container {
-    display: flex;
-    align-items: baseline;
+    @media screen and (min-width: $tablet) {
+      @include align-center($ai: baseline, $jc: space-around);
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+      flex-wrap: wrap;
+    }
   }
 
   .contacts {
-    margin-right: 83px;
+    @media screen and (min-width: $desktop) {
+      margin-right: 83px;
+    }
+  }
+
+  .join-us {
+    @media screen and (min-width: $desktop) {
+      margin-right: 94px;
+    }
+  }
+
+  .wrapper:not(:last-child) {
+    @media screen and (max-width: $desktop - 1px) {
+      margin-bottom: 60px;
+    }
   }
 
   .logo {
@@ -32,6 +55,7 @@
   }
 
   .button {
+    // OK
     display: flex;
     align-items: center;
     padding-top: 10px;
@@ -40,6 +64,10 @@
     padding-right: 28px;
 
     box-shadow: $box-shadow;
+
+    @media screen and (max-width: $desktop - 1px) {
+      margin: 0 auto;
+    }
   }
 
   .icon-sign {
@@ -52,25 +80,16 @@
   }
 }
 
-.footer-join-us {
-  margin-right: 94px;
+.social-network-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 
-  .social-network-link {
-    background-color: rgba(255, 255, 255, 0.1);
-    transition: background-color $transition-duration $timing-function;
-
-    &:hover,
-    &:focus {
-      background-color: $accent-color;
-    }
-  }
-
-  .icon-social-link {
-    fill: #ffffff;
-  }
+.footer .icon-social-link {
+  fill: #ffffff;
 }
 
 .footer-address .link {
+  @extend %link;
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
@@ -80,7 +99,13 @@
   }
 
   &:not(:last-child) {
-    margin-bottom: 9px;
+    @media screen and (max-width: $desktop - 1px) {
+      margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 9px;
+    }
   }
 }
 
@@ -96,14 +121,12 @@
 
 /* Footer form */
 .footer-form {
-  width: 570px;
+  @media screen and (min-width: $desktop) {
+  }
 
   input {
     display: block;
-    width: 358px;
     padding: 15px 16px;
-    margin-right: 12px;
-
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
@@ -113,11 +136,30 @@
     border-radius: 4px;
     background-color: transparent;
     box-shadow: $box-shadow;
+
+    @media screen and (max-width: $tablet - 1px) {
+      width: 100%;
+    }
+
+    @media screen and (min-width: $tablet) {
+      width: 450px;
+    }
+
+    @media screen and (max-width: $desktop - 1px) {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 358px;
+      margin-right: 12px;
+    }
   }
 }
 
 .footer-form-field {
-  display: flex;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
 
 .form-mail::placeholder {
