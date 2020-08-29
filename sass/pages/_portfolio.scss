@@ -116,14 +116,14 @@
 
 .overlay-text {
   @include position-absolute();
-
-  padding: 63px 24px;
   width: 100%;
   height: 100%;
+  padding: 10px 10px;
 
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.56;
+
   color: $title-dark-theme-color;
   background-color: rgba(33, 150, 243, 0.9);
 
@@ -131,6 +131,32 @@
   opacity: 0;
   transition: transform $transition-duration $timing-function,
     opacity $transition-duration $timing-function;
+
+  @media screen and (min-width: 350px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 24px;
+    padding-left: 24px;
+
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: $mobile) {
+    padding-top: 77px;
+    padding-bottom: 77px;
+
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 49px;
+    padding-bottom: 49px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 63px;
+    padding-bottom: 63px;
+  }
 
   .list-item:hover &,
   .list-item:focus & {
