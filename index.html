@@ -160,30 +160,68 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list">
             <li class="list-item">
-              <img
-                src="./images/what-we-do/notebook.jpg"
-                alt="Ноутбук"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/what-we-do/notebook.webp    1x,
+                    ./images/what-we-do/notebook@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/what-we-do/notebook.jpg    1x,
+                    ./images/what-we-do/notebook@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img src="./images/what-we-do/notebook.jpg" alt="Ноутбук" />
+              </picture>
+
               <h3 class="title">Десктопные приложения</h3>
             </li>
             <li class="list-item">
-              <img
-                src="./images/what-we-do/mobile.jpg"
-                alt="Мобильный телефон"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/what-we-do/mobile.webp    1x,
+                    ./images/what-we-do/mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/what-we-do/mobile.jpg    1x,
+                    ./images/what-we-do/mobile@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/what-we-do/mobile.jpg"
+                  alt="Мобильный телефон"
+                />
+              </picture>
               <h3 class="title">Мобильные приложения</h3>
             </li>
             <li class="list-item">
-              <img
-                src="./images/what-we-do/monitor.jpg"
-                alt="Монитор"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/what-we-do/monitor.webp    1x,
+                    ./images/what-we-do/monitor@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/what-we-do/monitor.jpg    1x,
+                    ./images/what-we-do/monitor@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img src="./images/what-we-do/monitor.jpg" alt="Монитор" />
+              </picture>
+
               <h3 class="title">Дизайнерские решения</h3>
             </li>
           </ul>
@@ -196,13 +234,61 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="member-list">
             <li class="list-item">
-              <img
-                class="team-image"
-                src="./images/team/foto1.jpg"
-                alt="Фото Николая Кучеренко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/foto1-desktop.webp    1x,
+                    ./images/team/foto1-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/foto1-desktop.jpg    1x,
+                    ./images/team/foto1-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/team/foto1-tablet.webp    1x,
+                    ./images/team/foto1-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/foto1-tablet.jpg    1x,
+                    ./images/team/foto1-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/team/foto1-mobile.webp    1x,
+                    ./images/team/foto1-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/foto1-mobile.jpg    1x,
+                    ./images/team/foto1-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+                <img
+                  class="team-image"
+                  src="./images/team/foto1-mobile.jpg"
+                  alt="Фото Николая Кучеренко"
+                />
+              </picture>
               <h3 class="team-member">Николай Кучеренко</h3>
               <p class="position" lang="en">Product Designer</p>
               <ul class="social-links-list">
@@ -253,13 +339,61 @@
               </ul>
             </li>
             <li class="list-item">
-              <img
-                class="team-image"
-                src="./images/team/foto2.jpg"
-                alt="Фото Ольги Ивановой"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/foto2-desktop.webp    1x,
+                    ./images/team/foto2-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/foto2-desktop.jpg    1x,
+                    ./images/team/foto2-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/team/foto2-tablet.webp    1x,
+                    ./images/team/foto2-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/foto2-tablet.jpg    1x,
+                    ./images/team/foto2-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/team/foto2-mobile.webp    1x,
+                    ./images/team/foto2-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/foto2-mobile.jpg    1x,
+                    ./images/team/foto2-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+                <img
+                  class="team-image"
+                  src="./images/team/foto2-mobile.jpg"
+                  alt="Фото Ольги Ивановой"
+                />
+              </picture>
               <h3 class="team-member">Ольга Иванова</h3>
               <p class="position" lang="en">Frontend Developer</p>
               <ul class="social-links-list">
@@ -310,13 +444,61 @@
               </ul>
             </li>
             <li class="list-item">
-              <img
-                class="team-image"
-                src="./images/team/foto3.jpg"
-                alt="Фото Андрея Шевченко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/foto3-desktop.webp    1x,
+                    ./images/team/foto3-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/foto3-desktop.jpg    1x,
+                    ./images/team/foto3-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/team/foto3-tablet.webp    1x,
+                    ./images/team/foto3-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/foto3-tablet.jpg    1x,
+                    ./images/team/foto3-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/team/foto3-mobile.webp    1x,
+                    ./images/team/foto3-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/foto3-mobile.jpg    1x,
+                    ./images/team/foto3-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+                <img
+                  class="team-image"
+                  src="./images/team/foto3-mobile.jpg"
+                  alt="Фото Андрея Шевченко"
+                />
+              </picture>
               <h3 class="team-member">Андрей Шевченко</h3>
               <p class="position" lang="en">Marketing</p>
               <ul class="social-links-list">
@@ -367,13 +549,61 @@
               </ul>
             </li>
             <li class="list-item">
-              <img
-                class="team-image"
-                src="./images/team/foto4.jpg"
-                alt="Фото Ивана Николаева"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/foto4-desktop.webp    1x,
+                    ./images/team/foto4-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/foto4-desktop.jpg    1x,
+                    ./images/team/foto4-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/team/foto4-tablet.webp    1x,
+                    ./images/team/foto4-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/foto4-tablet.jpg    1x,
+                    ./images/team/foto4-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/team/foto4-mobile.webp    1x,
+                    ./images/team/foto4-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/foto4-mobile.jpg    1x,
+                    ./images/team/foto4-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+                <img
+                  class="team-image"
+                  src="./images/team/foto4-mobile.jpg"
+                  alt="Фото Ивана Николаева"
+                />
+              </picture>
               <h3 class="team-member">Иван Николаев</h3>
               <p class="position" lang="en">UI Designer</p>
               <ul class="social-links-list">
@@ -515,6 +745,7 @@
               class="footer-map link"
               href="https://goo.gl/maps/ABY5jRsCjZRVGQo96"
               target="_blank"
+              rel="noreferrer noopener"
               >г. Киев, пр-т Леси Украинки, 26</a
             >
             <a class="footer-mail link" href="mailto:info@example.com"
@@ -605,8 +836,11 @@
     <!-- Модальне вікно -->
     <div data-modal class="backdrop is-hidden">
       <form action="#" class="modal-form">
-        <button data-modal-close class="modal-close-button" type="button">
-          <svg class="icon-modal-close-button">
+        <button class="modal-close-button" type="button" data-modal-close>
+          <svg
+            class="icon-modal-close-button"
+            aria-label="Иконка закрытия модального окна"
+          >
             <use href="./images/sprite.svg#icon-close-btn"></use>
           </svg>
         </button>
@@ -674,7 +908,7 @@
             required
           />
           <span class="modal-form-custom-checkbox"></span>
-          <span
+          <span class="modal-form-policy"
             >Соглашаюсь с рассылкой и принимаю
             <a class="link-contract" href="">Условия договора</a></span
           >

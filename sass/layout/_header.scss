@@ -46,7 +46,12 @@
   z-index: 100;
 
   @media screen and (max-width: $tablet - 1px) {
-    display: none;
+    // display: none;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity $transition-duration $timing-function,
+      transform $transition-duration $timing-function;
+
     @include position-absolute($top: 100%);
     width: 100%;
     padding-top: 60px;
@@ -61,7 +66,9 @@
       0px 1px 3px rgba(0, 0, 0, 0.16);
 
     &.is-open {
-      display: block;
+      // display: block;
+      opacity: 1;
+      transform: scale(1);
     }
   }
 
@@ -83,15 +90,29 @@
   display: none;
 }
 
+// .menu-button .icon-menu-close {
+//   opacity: 0;
+//   transition: opacity 250ms linear;
+// }
+
+// .menu-button.is-open .icon-menu-close {
+//   opacity: 1;
+// }
+
+// .menu-button.is-open .icon-menu-open {
+//   opacity: 0;
+//   transition: opacity 250ms linear;
+// }
+
 .icon-menu-button {
   fill: $title-light-theme-color;
 
   transition: fill $transition-duration $timing-function;
-}
 
-.menu-button:hover .icon-menu-button,
-.menu-button:focus .icon-menu-button {
-  fill: $accent-color;
+  .menu-button:hover &,
+  .menu-button:focus & {
+    fill: $accent-color;
+  }
 }
 
 .site-nav-list {
@@ -151,6 +172,7 @@
 .site-nav-link,
 .header-connect-link {
   @extend %link;
+  display: inline-block;
 
   transition: color $transition-duration $timing-function;
 
@@ -161,8 +183,6 @@
 }
 
 .site-nav-link {
-  display: inline-block;
-
   color: $title-light-theme-color;
 
   @media screen and (min-width: $tablet) {

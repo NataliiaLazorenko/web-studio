@@ -39,9 +39,11 @@ body.modal-open {
 
   @media (min-width: $mobile) {
     @include position-absolute(50%, 50%);
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%);
     max-width: 450px;
     width: 100%;
+
+    transform: translate(-50%, -50%) scale(1);
   }
 
   @media screen and (min-width: $desktop) {
@@ -49,10 +51,10 @@ body.modal-open {
   }
 
   .backdrop.is-hidden & {
-    transform: scale(0.7);
+    transform: scale(1.1);
 
     @media (min-width: $mobile) {
-      transform: translate(-50%, -50%) scale(0.7);
+      transform: translate(-50%, -50%) scale(1.1);
     }
   }
 
@@ -84,8 +86,8 @@ body.modal-open {
   line-height: 1.5;
   color: $title-light-theme-color;
 
-  @media screen and (min-width: $tablet) {
-    // line-height: ;
+  @media screen and (min-width: $desktop) {
+    line-height: 1.15;
   }
 }
 
@@ -203,18 +205,29 @@ body.modal-open {
 .modal-form-option-label {
   @include align-center();
   margin-bottom: 30px;
+}
 
-  line-height: 1.71;
+.modal-form-policy {
+  font-size: 12px;
+  line-height: 1.17;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form-custom-checkbox {
   display: inline-block;
   width: 16px;
   height: 15px;
+  flex-shrink: 0;
   margin-right: 8px;
 
   border: 2px solid #212121;
   border-radius: 2px;
+
+  transition: background-color $transition-duration $timing-function;
 
   .modal-form-checkbox:checked + & {
     background-image: url(../images/icon-checked.svg);

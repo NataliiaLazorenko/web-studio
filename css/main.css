@@ -584,9 +584,10 @@ body.modal-open {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%);
     max-width: 450px;
     width: 100%;
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 
@@ -597,12 +598,12 @@ body.modal-open {
 }
 
 .backdrop.is-hidden .modal-form {
-  transform: scale(0.7);
+  transform: scale(1.1);
 }
 
 @media (min-width: 480px) {
   .backdrop.is-hidden .modal-form {
-    transform: translate(-50%, -50%) scale(0.7);
+    transform: translate(-50%, -50%) scale(1.1);
   }
 }
 
@@ -629,6 +630,12 @@ body.modal-open {
   font-size: 20px;
   line-height: 1.5;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-invite {
+    line-height: 1.15;
+  }
 }
 
 .modal-close-button {
@@ -738,16 +745,29 @@ body.modal-open {
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  line-height: 1.71;
+}
+
+.modal-form-policy {
+  font-size: 12px;
+  line-height: 1.17;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-policy {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form-custom-checkbox {
   display: inline-block;
   width: 16px;
   height: 15px;
+  flex-shrink: 0;
   margin-right: 8px;
   border: 2px solid #212121;
   border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-checkbox:checked + .modal-form-custom-checkbox {
@@ -847,7 +867,9 @@ body.modal-open {
 
 @media screen and (max-width: 767px) {
   .menu-container {
-    display: none;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: absolute;
     top: 100%;
     left: 0;
@@ -861,7 +883,8 @@ body.modal-open {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   }
   .menu-container.is-open {
-    display: block;
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
@@ -957,6 +980,7 @@ body.modal-open {
 
 .site-nav-link,
 .header-connect-link {
+  display: inline-block;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -967,7 +991,6 @@ body.modal-open {
 }
 
 .site-nav-link {
-  display: inline-block;
   color: #212121;
 }
 
@@ -1039,8 +1062,40 @@ body.modal-open {
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/header.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/hero-mobile.jpg");
+  background-size: cover;
+  background-position: center;
   background-color: rgba(47, 48, 58, 0.8);
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/hero-mobile@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/hero-tablet.jpg");
+  }
+}
+
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/hero-tablet@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/hero-desktop.jpg");
+  }
+}
+
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/hero-desktop@2x.jpg");
+  }
 }
 
 @media screen and (max-width: 1199px) {
