@@ -3,6 +3,8 @@
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.8),
@@ -13,11 +15,6 @@
   background-position: center;
   background-color: rgba(47, 48, 58, 0.8);
   // background-repeat: no-repeat;
-
-  @media screen and (max-width: $desktop - 1px) {
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
 
   @media screen and (min-width: $desktop) {
     padding-top: 200px;

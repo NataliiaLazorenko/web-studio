@@ -1,3 +1,4 @@
-# goit-markup-hw-08
+# Web-studio
 
-Tech skills-Homework 8
+- Technologies: HTML, SASS (SCSS)
+- About project: mobile-first adaptive landing page of web studio
